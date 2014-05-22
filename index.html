@@ -14,19 +14,45 @@
 	<h1>Hallo Welt!</h1>
 
 	<table border="1">
-		<tr>
-			<th>1. Spalte</th>
-			<th>2. Spalte</th>
-		</tr>
+		<caption>Stundenplan</caption>
 
-		<tr>
-			<td>1. Zelle</td>
-			<td>2. Zelle</td>
-		</tr>
-		<tr>
-			<td>3. Zelle</td>
-			<td>4. Zelle</td>
-		</tr>
+		<thead>
+			<tr>
+				<th>Zeit</th>
+				<th>Montag</th>
+				<th>Dienstag</th>
+				<th>Mittwoch</th>
+				<th>Donnerstag</th>
+				<th>Freitag</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>08-09 Uhr</td>
+				<td>Mathe</td>
+				<td>Deutsch</td>
+				<td rowspan="2">Englisch</td>
+				<td>Informatik</td>
+				<td>Biologie</td>
+			</tr>
+			<tr>
+				<td>09-10 Uhr</td>
+				<td rowspan="2">Physik</td>
+				<td>Mathe</td>
+				<td>Geschichte</td>
+				<!-- Rowspan! -->
+				<td>Geschichte</td>
+			</tr>
+			<tr>
+				<td>10-11 Uhr</td>
+				<!-- Rowspan! -->
+				<td>Biologie</td>
+				<td>Physik</td>
+				<td>Spanisch</td>
+				<td>Latein</td>
+			</tr>
+		</tbody>
 	</table>
 
 </body>
